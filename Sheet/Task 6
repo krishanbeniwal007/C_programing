@@ -1,0 +1,208 @@
+1. Palindrome
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int i,a=0,b=0,c=0;
+    printf("Enetr the number ");
+    scanf("%d",&i);
+    c=i;
+    while(i>0)
+    {
+        a=i%10;
+        b=a+(b*10);
+        i=i/10;
+    }
+    if(c==b)
+    {
+    printf("It is a palindrome number");
+    }
+    else
+    {printf("It is not a palindrome number");
+}
+    return 0;
+}
+
+2. Prime number or not
+#include <stdio.h>
+
+int main()
+{
+    int n,count;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        count+=1;
+    }
+    if(count==2)
+    printf("It is a prime number");
+    else
+    printf("It is not a prime number");
+
+    return 0;
+}
+
+3.Armstrong number
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,count=0,c=0,a=0,b=0;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    c=n;
+    count=log10(n)+1;
+    while(n>0)
+    {
+    a=n%10;
+    b=b+(pow(a,count));
+    n=n/10;
+    }
+    if(c==b)
+    printf("It is an armstrong number");
+    else
+    printf("It is not a armstrong number");
+    return 0;
+}
+4.Greatest common divisor
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n1,n2,g;
+    printf("Enter two number ");
+    scanf("%d%d",&n1,&n2);
+    for(int i=1;i<=n1&&i<=n2;i++)
+    {
+        if(n1%i==0 && n2%i==0)
+        g=i;
+    }
+    printf("GCD of the numbers is %d",g);
+    
+}
+5. Least common multiple
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n1,n2,g;
+    printf("Enter two number ");
+    scanf("%d%d",&n1,&n2);
+    for(int i=1;i<=n1&&i<=n2;i++)
+    {
+        if(n1%i==0 && n2%i==0)
+        g=(n1*n2)/i;
+    }
+    printf("LCM of the numbers is %d",g);
+    
+}
+
+6.perfect number
+#include<stdio.h>
+int main()
+{
+    int a,x=0;
+    printf("Enter a number ");
+    scanf("%d",&a);
+    for(int i=1;i<a;i++)
+    {
+        if (a%i==0)
+        x=x+i;
+    }
+    if (x==a)
+    printf("It is a perfect number");
+    else
+    printf("It is not a perfect number");
+}
+7.Strong number
+#include <stdio.h>
+int main()
+{
+    int n,f,a,b,c,i;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    c=n;
+while(n){
+   i = 1,f = 1;
+   a = n % 10;
+   while(i <= a){
+      f = f * i;
+      i++;
+   }
+   b = b + f;
+   n = n / 10;
+}
+if(b == c)
+   printf("%d is a strong number",c);
+else
+   printf("%d is not a strong number",c);
+}
+
+8.Fabonaci series
+#include <stdio.h>
+int main()
+{
+    int n,y=0;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    for(int i=0;i<=n;i++)
+    {
+        y=y+i;
+        printf("%d ",y);
+        y=i;
+    }
+}
+9.Sum of digits
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,a,b;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    while(n>0)
+    {
+        a=n%10;
+        b=b+a;
+        n=n/10;
+    }
+    printf("Sum of the number is %d",b);
+    
+}
+
+10.Time table
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number ");
+    scanf("%d",&a);
+    for(int i=1;i<=10;i++)
+    {
+        printf("%d x %d = %d\n",a,i,a*i);
+    }
+}
+11.Factorial
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+    int n,f=1;
+    printf("Enter a number ");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        f=f*i;
+    }
+    printf("Factorial of number is %d",f);
+}
+
+12.Ascii character
