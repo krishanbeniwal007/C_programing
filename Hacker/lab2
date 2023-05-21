@@ -1,0 +1,335 @@
+##Profit Or Loss 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    double cp,sp;
+    scanf("%lf%lf",&cp,&sp);
+    if(sp>cp)
+    {
+        printf("Profit\n");
+        printf("%0.2lf%%",(sp-cp)/cp*100.0);
+    }
+    else
+    {
+        printf("Loss\n");
+        printf("%0.2lf%%",(cp-sp)/cp*100.0);
+    }
+    return 0;
+}
+
+
+##Wish me
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int h,m;
+    scanf("%d%d",&h,&m);
+    if ((h>=12 && h<=11)&&(m>=00 &&m<=59))
+    {
+        printf("Good Morning");        
+    }
+    else if ((h>=12 && h<=15)&&(m>=00 && m<=59))
+    {
+        printf("Good Afternoon");
+    }
+    else if ((h>=16 && h<=20)&&(m>=00 && m<=59))
+    {
+        printf("Good Evening");
+    }
+    else if ((h>=22 && h<=23)&&(m>=00 && m<=59))
+    {
+        printf("Good Night");
+    }
+    else if ((h>=1 && h<=3)&&(m>=00 && m<=59))
+    {
+        printf("Good Night");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+##Trip or Not
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int N,S,C,H,L,T;
+    int a,b,c;
+    scanf("%d%d%d%d%d%d",&N,&S,&C,&H,&L,&T);
+    a=S*C*H;
+    b=N-L;
+    c=N*T;
+    if (a<c)
+    {
+        printf("Goa Jaayenge");
+    }
+    else{
+        printf("Padhai Karenge");
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Funny or Not
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float N,B,G,I,D;
+    float a,b,c;
+    scanf("%f%f%f%f%f",&N,&B,&G,&I,&D);
+    a=B*I;
+    b=G*D;
+    c=a-b;
+    if (c>0)
+    {
+        printf("Simple Questions");
+        
+    }
+    else if(c<0)
+    {
+        printf("Funny Questions");
+        
+    }
+    else
+    {
+        printf("God Knows!");
+        
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Find The Operator
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,r;
+    scanf("%d%d%d",&a,&b,&r);
+    if ((a+b)!=r)
+    {
+        if(a*b==r)
+        {
+            printf("*");
+        }
+        if(a/b==r)
+        {
+            printf("/");
+        }
+        if(a-b==r)
+        {
+            printf("-");
+        }
+        if(a%b==r)
+        {
+            printf("%%");
+        }
+    }
+    else{printf("+");}
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Probability of Buying Phone
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    double p1,p2,p3,A;
+    double c=0;
+    scanf("%lf%lf%lf%lf",&p1,&p2,&p3,&A);
+    if (p1<A)
+    {
+        c++;
+    }
+    if(p2<A)
+    {
+        c++;
+    }
+    if (p3<A)
+    {
+        c++;
+    }
+    if (p1<A)
+    {
+     printf("%.3lf\n",1/c);
+    }
+    else 
+    {
+     printf("0.000\n");
+    }
+    if (p2<A)
+    {
+    printf("%.3lf\n",1/c);
+    }
+    else 
+    {
+      printf("0.000\n");
+    }
+    if (p3<A)
+    {
+     printf("%.3lf\n",1/c);
+    }
+    else 
+    {
+      printf("0.000\n");
+    }
+    
+    
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+##Largest among numbers
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if ((a>b)&&(a>c))
+    {
+        printf("%d",a);
+    }
+    else if ((b>a)&&(b>c))
+    {
+        printf("%d",b);
+    }
+    else
+    {
+        printf("%d",c);
+    }
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Product of 2 numbers
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",(a*b));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+##Days in month 2
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+        int a;
+    scanf("%d",&a);
+
+    switch(a)
+    {
+        case 1: 
+            printf("31");
+            break;
+        case 2: 
+            printf("28");
+            break;
+        case 3: 
+            printf("31");
+            break;
+        case 4: 
+            printf("30");
+            break;
+        case 5: 
+            printf("31");
+            break;
+        case 6: 
+            printf("30");
+            break;
+        case 7: 
+            printf("31");
+            break;
+        case 8: 
+            printf("31");
+            break;
+        case 9: 
+            printf("30");
+            break;
+        case 10: 
+            printf("31");
+            break;
+        case 11: 
+            printf("30");
+            break;
+        case 12: 
+            printf("31");
+            break;
+        default: 
+            printf("Wrong month value.");
+
+    }
+    return 0;
+}
+
+
+##Valid Triangles
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n,i=1,a,b,c;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        scanf("%d%d%d",&a,&b,&c);
+        if(a+b+c==180)
+        {printf("YES\n");}
+        else{printf("NO\n");}
+    }
+    return 0;
+}
