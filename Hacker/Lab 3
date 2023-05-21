@@ -1,0 +1,138 @@
+##Find the Time 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float r,t;
+    scanf("%f",&r);
+    t=100/r;
+    printf("%.2f",t);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+##Hello Me 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char c[1000000];
+    scanf("%s", c);
+    printf("Welcome %s",c);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Wonderful Chocolate Offer
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int D,N,C;
+    scanf("%d%d%d",&C,&N,&D);
+    //number of choclates left after n days
+    printf("%d",C+N*D-N);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+##Compound For Two Years
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p,r,n=1,x,y,z,c;
+    scanf("%f%f",&p,&r);
+    x=n*2;
+    y=1+(r/100);
+    c=pow(y,x);
+    z=p*c;
+    z=z-p;
+    printf("%.2f",z);
+}
+
+##Simple Interest 6
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float p,r,t;int a,x;
+    scanf("%f%f%f",&p,&r,&t);
+    x=((p*r*t)/100);
+    a=p+x;
+    printf("%d",a);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Ant Consensus
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int c,k,n;long x;
+    scanf("%d%d%d",&c,&k,&n);
+    x=pow(k,n);
+    printf("%.0ld",(c*x));
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+##Encoded Name
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int w1,w2,w3,w4,w5;
+    scanf("%d&%d&%d&%d&%d",&w1,&w2,&w3,&w4,&w5);
+    printf("%c%c%c%c%c",w1,w2,w3,w4,w5);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Leap years 2
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i;
+    scanf("%d", &n);
+    for (i=1;i<=n;i++)
+    {
+        if (i%400==0)
+        {
+            printf("%d ",i);
+        }
+        else if ((i%4==0) && (i%100!=0))
+        {
+            printf("%d ",i);
+        }
+    }
+    return 0;
+}
