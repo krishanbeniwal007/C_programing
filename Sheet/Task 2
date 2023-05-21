@@ -1,0 +1,57 @@
+Q1 
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter two numbers");
+    scanf("%d%d", &a,&b);
+    a>b? printf("Maximum is %d",a): printf("Maximum is %d",b);
+    return 0;
+}
+
+Q2
+# include <stdio.h>
+# include <math.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers");
+    scanf("%d%d%d", &a,&b,&c);
+    a>b && a>c ? printf("Maximum is %d",a): b>c ? printf("Maximum is %d",b) : printf("Maximum is %d",c);
+    return 0;
+}}
+
+Q3
+# include <stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number");
+    scanf("%d",&a);
+    a%2==0 ? printf("even") : printf("odd");
+    return 0;
+}
+
+Q4
+#include <stdio.h>
+int main()
+{
+    int year;
+    printf("Enter a year");
+    scanf("%d", &year);
+    year % 400 == 0 || year % 4 == 0 ? printf("It is a leap year") : printf("It is not a leap year");
+    return 0;
+}
+
+Q5
+# include <stdio.h>
+int main()
+{
+    char a,b;
+    printf("Enter a character");
+    scanf("%c", &a);
+    b=("%d",a);
+    (b>=65 && b<=90) || (b>=97 && b<=122) ? printf("It is an alphabet") : printf("It is not an alphabet");
+    return 0;
+}
