@@ -1,0 +1,173 @@
+Q1
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter two numbers ");
+    scanf("%d%d",&a,&b);
+    if (a>b)
+    {
+        printf("%d is greater than %d",a,b);
+    }
+    else
+    {
+        printf("%d is greater than %d",b,a);
+    }
+}
+
+Q2
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter three numbers ");
+    scanf("%d%d%d",&a,&b,&c);
+    if ((a>b)&&(a>c))
+    {
+        printf("%d is greatest",a);
+    }
+    else if((b>a)&&(b>c))
+    {
+        printf("%d is greatest",b);
+    }
+    else
+    {
+        printf("%d is greatest",c);
+    }
+}
+
+Q3
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number ");
+    scanf("%d",&a);
+    if (a>0)
+    {
+        printf("%d is positive number",a);
+    }
+    else
+    {
+        if (a<0)
+        {
+            printf("%d is negetive number",a);
+        }
+        else
+        {
+            printf("%d is zero",a);
+        }
+    }
+}
+
+Q4
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a number which is divisible by 5 and 11 ");
+    scanf("%d",&a);
+    if((a%5==0)&&(a%11==0))
+    {
+        printf("%d Number is divisible by 5 and 11",a);
+    }
+    else
+    {
+        printf("%d Number is not divisible by 5 and 11",a);
+    }
+}
+
+Q5
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a numbers ");
+    scanf("%d",&a);
+    if(a%2==0)
+    {
+        printf("%d is even number",a);
+    }
+    else
+    {
+        printf("%d is odd number",a);
+    }
+}
+
+Q6
+#include<stdio.h>
+int main()
+{
+    int a;
+    printf("Enter a year ");
+    scanf("%d",&a);
+    if((a%4==0)&&(a%400!=0))
+    {
+        printf("%d is a leap year",a);
+    }
+    else
+    {
+        printf("%d is not a leap year",a);
+    }
+}
+
+Q7
+#include<stdio.h>
+int main()
+{
+   char ch;
+   printf("Enter a character ");
+   scanf("%c",&ch);
+   if((ch >= 65 && ch <= 90)||(ch >= 97 && ch <= 122))
+   {
+       printf("It is alphabet");
+   }
+   else
+   {
+       printf("It is not an alphabet");
+   }
+}
+
+Q8
+#include<stdio.h>
+int main()
+{
+   char ch;
+   printf("Enter a character ");
+   scanf("%c",&ch);
+   if((ch >= 65 && ch <= 90)||(ch >= 97 && ch <= 122))
+   {
+       if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+       {
+           printf("Vowel");
+       }
+       else
+       {
+           printf("Consonent");
+       }
+   }
+   else
+   {
+       printf("It is not an alphabet");
+   }
+}
+
+Q9#include<stdio.h>
+int main()
+{
+   char ch;
+   printf("Enter a character ");
+   scanf("%c",&ch);
+   if((ch >= 65 && ch <= 90)||(ch >= 97 && ch <= 122))
+   {
+       printf("It is alphabet");
+   }
+   else if(ch>=48 && ch<=57)
+   {
+       printf("It is a digit");
+   }
+   else
+   {
+       printf("It is a special digit");
+   }
+}
