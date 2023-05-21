@@ -1,0 +1,164 @@
+##ASCII code 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char c;
+    scanf("%c",&c);
+    printf("%d",c);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Number System 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("%d\n",a);
+    printf("%o\n",a);
+    printf("%x\n",a);
+    printf("%X",a);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Floor and ceil
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a;
+    float x,y;
+    scanf("%f",&a);
+    x=floor(a);
+    y=ceil(a);
+    printf("%f\n",x);
+    printf("%f",y);
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Feet to inches
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a;
+    scanf("%d",&a);
+    printf("%d",(12*a));
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Divisibility check
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,d1,d2;
+    scanf("%d%d%d",&a,&d1,&d2);
+    if ((a%d1==0)&&(a%d2==0))
+    {
+        printf("Yes.");
+    }
+    else
+    {
+        printf("No.");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+##Vowel or Consonant 1
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    char c;
+    int a;
+    scanf("%c",&c);
+    a=("%d",c);
+    if (a==65||a==69||a==73||a==79||a==85||a==97||a==101||a==105||a==111||a==117)
+        printf("Vowel.");
+    else if (a>=65 && a<=90 || a>=97 && a<=122)
+        printf("Consonant.");
+    else
+        printf("Not an alphabet.");
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Swapping 5
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d %d",a,b);
+    
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
+
+
+##Product of 2 numbers
+#include <math.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <limits.h>
+#include <stdbool.h>
+
+int main() {
+    int a,b;
+    scanf("%d%d",&a,&b);
+    printf("%d",a*b);
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+##maths_fun
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    float a,c,b;
+    scanf("%f%f%f",&a,&b,&c);
+    printf("%f\n",(pow(a,b)));
+    printf("%f",(sqrt(c)));
+    
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
