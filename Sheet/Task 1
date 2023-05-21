@@ -1,0 +1,238 @@
+Q1
+#include<stdio.h>
+int main()
+{
+    int a;
+    float b;
+    char c;
+    double d;
+    scanf("%d",&a);
+    printf("Value is %d\n",a);
+    scanf("%f",&b);
+    printf("Value is %f\n",b);
+    scanf("%c",&c);
+    printf("Value is %c\n",c);
+    scanf("%lf",&d);
+    printf("Value is %lf",d);
+    return 0;
+
+}
+
+Q2
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter 2 values:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("sum of two no.%d",a+b);
+}
+
+Q3
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter 2 values:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("sum of two no.%d\n",a+b);
+    printf("sum of two no.%d\n",a-b);
+    printf("sum of two no.%d\n",a/b);
+    printf("sum of two no.%d\n",a%b);
+    printf("sum of two no.%d",a*b);
+}
+
+Q4
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter 2 values:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("length %d\n",a);
+    printf("breath %d\n",b);
+    c=2*(a+b);
+    printf("perimeter of rectangle %d",c);
+}
+
+Q5
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    printf("Enter 2 values:\n");
+    scanf("%d",&a);
+    scanf("%d",&b);
+    printf("length %d\n",a);
+    printf("breath %d\n",b);
+    c=(a*b);
+    printf("area of rectangle %d",c);
+}
+
+Q6
+#include<stdio.h>
+int main()
+{
+    float r;
+    printf("Enter radius");
+    scanf("%f",&r);
+    printf("Radius is %f\n",r);
+    printf("diameter is %f\n",(r*2));
+    printf("Circumference is %f\n",(3.14*2*r));
+    printf("Area is %f\n",(3.14*r*r));
+}
+
+Q7
+#include<stdio.h>
+int main()
+{
+    float r;
+    printf("Enter length");
+    scanf("%f",&r);
+    printf("length in cm  is %f\n",r);
+    printf("length in m is %f\n",(0.1*r));
+    printf("length in km is %f\n",(0.000001*r));
+}
+
+Q8
+#include<stdio.h>
+int main()
+{
+    float r;
+    printf("Enter temperature");
+    scanf("%f",&r);
+    printf("temperature in celcius is %f\n",r);
+    printf("temperature in farenhite is %f\n",((r*(9/5))+32));
+}
+
+Q9
+#include<stdio.h>
+int main()
+{
+    float r;
+    printf("Enter temperature");
+    scanf("%f",&r);
+    printf("temperature in farenhite is %f\n",r);
+    printf("temperature in celcius is %f\n",((r-32)*(5/9)));
+}
+Q10 
+#include<stdio.h>
+int main()
+{
+    int  r,y,w,d;
+    printf("Enter days");
+    scanf("%d",&r);
+    y=r/365;
+    w=(r%365)/7;
+    d=(r%365)%7;
+    printf("year %d\nweeks %d\ndays %d\n",y,w,d);
+}
+
+Q11
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  r,y;
+    printf("Enter two numbers\n");
+    scanf("%d",&r);
+    printf("First number is %d\n",r);
+    scanf("%d",&y);
+    printf("Second number is %d\n",y);
+    printf("no. 1 power to no. 2 is %lf\n",(pow(r,y)));
+}
+
+Q12
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  r;
+    printf("Enter the numbers\n");
+    scanf("%d",&r);
+    printf("Entered number is %d\n",r);
+    printf("Squart root of the number entered is %lf\n",(sqrt(r)));
+}
+
+Q13
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  r,y;
+    printf("Enter two Angle\n");
+    scanf("%d",&r);
+    printf("First Angle is %d\n",r);
+    scanf("%d",&y);
+    printf("Second Angle is %d\n",y);
+    printf("Third Angle is %d degrees\n",(180-r-y));
+}
+
+Q14
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  r,y;
+    printf("Enter base and height of a triangle\n");
+    scanf("%d",&r);
+    printf("base is %d\n",r);
+    scanf("%d",&y);
+    printf("height is %d\n",y);
+    printf("area of triangle is %lf\n",((r*y)/2));
+}
+
+Q15
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  r;
+    printf("Enter angle of equalateral triangle\n");
+    scanf("%d",&r);
+    printf("side is %d\n",r);
+    printf("area of triangle is %lf\n",((1.732*r*r)));
+}
+
+Q16
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int  a,b,c,d,e;
+    printf("Enter score of five students\n");
+    scanf("%d %d %d %d %d",&a,&b,&c,&d,&e);
+    printf("scores are %d\n%d\n%d\n%d\n%d\n",a,b,c,d,e);
+    printf("Avrage of the students is %d\n",((a+b+c+d+e)/5));
+    printf("percentage is %d\n",(a+b+c+d+e)/5);
+}
+Q17
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p,r,t;
+    printf("Enter principle, rate, time to find simple interest\n");
+    scanf("%f\n%f\n%f\n",&p,&r,&t);
+    printf("principle %f\n rate %f\n time%f\n",p,r,t);
+    printf("Simple interesr is %f",(p*(1+r*t)));
+}
+
+Q18
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    float p,r,t,n,x,y,z,c;
+    printf("Enter principle, rate, time, number of times interest applied to find simple interest\n");
+    scanf("%f%f%f%f",&p,&r,&t,&n);
+    printf("principle %f\n rate %f\n time%f\n number of times interest applied%f\n",p,r,t,n);
+    x=n*t;
+    y=1+(r/n);
+    c=pow(y,x);
+    z=p*c;
+    printf("Compound interwst %lf\n",z);
+}
