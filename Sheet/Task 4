@@ -1,0 +1,257 @@
+Q1 
+#include <stdio.h>
+
+int main()
+{
+    int day;
+    printf ("Enter the day no.");
+    scanf("%d",&day);
+    switch (day) 
+{
+    case 1:
+    printf("Monday");
+    break;
+    case 2:
+    printf("Tuesday");
+    break;
+    case 3:
+    printf("Wednesday");
+    break;
+    case 4:
+    printf("Thursday");
+    break;
+    case 5:
+    printf("Friday");
+    break;
+    case 6:
+    printf("Saturday");
+    break;
+    case 7:
+    printf("Sunday");
+    break;
+    default:
+    printf("Day does not exists");
+}
+}
+
+Q2
+#include <stdio.h>
+
+int main()
+{
+    int day;
+    printf ("Enter the day no.");
+    scanf("%d",&day);
+    switch (day) {
+    case 1:
+    printf("January has 31 days");
+    break;
+    case 2:
+    printf("February has 28 days\nIn leap year it have 29 days");
+    break;
+    case 3:
+    printf("March has 31 days");
+    break;
+    case 4:
+    printf("April has 30 days");
+    break;
+    case 5:
+    printf("May has 31 days");
+    break;
+    case 6:
+    printf("June has 30 days");
+    break;
+    case 7:
+    printf("July has 31 days");
+    break;
+    case 8:
+    printf("Aguest has 31 days");
+    break;
+    case 9:
+    printf("September has 30 days");
+    break;
+    case 10:
+    printf("October has 31 days");
+    break;
+    case 11:
+    printf("November has 30 days");
+    break;
+    case 12:
+    printf("December has 31 days");
+    break;
+    default:
+    printf("Month does not exists");
+}
+}
+
+Q3
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("Enter a character %c",ch);
+    scanf("%c",&ch);
+    if((ch >= 65 && ch <= 90)||(ch >= 97 && ch <= 122))
+        {switch(ch)
+        {
+            case 'a':
+            case 'A':
+            case 'e':
+            case 'E':
+            case 'i':
+            case'I':
+            case'o':
+            case'O':
+            case'u':
+            case'U':
+                printf("Vowel");
+                break;
+            default:
+                printf("Consonent");
+        }
+}}
+
+Q4
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("Enter two numbers ");
+    scanf("%d%d",&a,&b);
+        {switch(a>b)
+        {
+            case 0:
+                printf("second number is bigger");
+            break;
+            case 1:
+                printf("first number is bigger");
+            break;
+        }
+}}
+Q5
+#include<stdio.h>
+void main()
+{
+    int ch;
+    printf("Enter a number ");
+    scanf("%d",&ch);
+    ch=ch%2;
+        {switch(ch)
+        {
+            case 0:
+                printf("Even");
+            break;
+            case 1:
+                printf("Odd");
+            break;
+        }
+}}
+
+Q6
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("Enter two numbers ");
+    scanf("%d",&a);
+    
+        {switch(a>0)
+        {
+            case 1:
+                printf("number is positive");
+            break;
+            case 0:
+            switch(a<0)
+            {
+                case 0:
+                printf("number is zero");
+                break;
+                case 1:
+                printf("number is negetive");
+                break;
+            }
+            
+            break;
+        }
+}}
+Q7
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float a, b, c;
+    float r1,r2,r;
+    float d;
+    printf("Enter values of a, b, c of quadratic equation (aX^2 + bX + c): ");
+    scanf("%f%f%f", &a, &b, &c);
+    d = (b * b) - (4 * a * c);
+    switch(d > 0)
+    {
+        case 1:
+            r1 = (-b + sqrt(d)) / (2 * a);
+            r2 = (-b - sqrt(d)) / (2 * a);
+
+            printf("Two distinct and real roots exists: %.2f and %.2f", 
+                    r1, r2);
+            break;
+
+        case 0:
+            switch(d< 0)
+            {
+                case 1:
+                    r1 = r2 = -b / (2 * a);
+                    r = sqrt(-d) / (2 * a);
+
+                    printf("Two distinct complex roots exists: %.2f + i%.2f and %.2f - i%.2f", 
+                            r1,r,r2,r);
+                    break;
+
+                case 0:
+                    r1 = r2 = -b / (2 * a);
+
+                    printf("Two equal and real roots exists: %.2f and %.2f", r1, r2);
+
+                    break;
+            }
+    }
+
+    return 0;
+}
+
+Q8
+#include<stdio.h>
+int main()
+{
+    char ch;int a,b,c;
+    printf("enter \n'+' to add \n'-' to subtract \n'/' to divide\n'*' to multiply\n'%%' to find remainder of two number\n");
+    scanf("%c",&ch);
+    printf("Enter two numbers");
+    scanf("%d%d",&a,&b);
+    switch(ch)
+    {
+        case '+':
+        c=a+b;
+        printf("addition of two number is %d",c);
+        break;
+        case '-':
+        c=a-b;
+        printf("subtraction of two number is %d",c);
+        break;
+        case '/':
+        c=a/b;
+        printf("Divition of two number is %d",c);
+        break;
+        case '*':
+        c=a*b;
+        printf("multiplication of two number is %d",c);
+        break;
+        case '%':
+        c=a%b;
+        printf("remainder of two number is %d",c);
+        break;
+        default:
+        printf("Does not exist");
+        break;
+    }
+    
+}
